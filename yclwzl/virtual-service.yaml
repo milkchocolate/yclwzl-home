@@ -13,3 +13,6 @@ spec:
             port:
               number: 80
             host: yclwzl-service
+      match:
+        - uri:
+            prefix: "/yclwzl"
