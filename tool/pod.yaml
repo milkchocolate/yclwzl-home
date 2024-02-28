@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tool
+spec:
+  containers:
+    - name: tool
+      image: ubuntu:latest
+      command: ["sleep"]
+      args: ["infinity"]

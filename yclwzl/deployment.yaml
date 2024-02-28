@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yclwzl-deployment
+  labels:
+    app: yclwzl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yclwzl
+  template:
+    metadata:
+      labels:
+        app: yclwzl
+    spec:
+      containers:
+        - name: yclwzl
+          image: aaronyunan/yclwzl:1
+          ports:
+            - containerPort: 8080
